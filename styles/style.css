@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+  
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+    padding-left: 20px; /* Asegúrate de dejar espacio para la viñeta */
+  }
+  
+
+  li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px; /* Tamaño de la viñeta */
+    height: 25px; /* Tamaño de la viñeta */
+    transition: transform 0.5s ease;
+  }
+
+  li.star::before{
+    width: 20px;
+    height: 20px;
+    background: url(../images/star.png) center/contain no-repeat;
+  }
+  li.book::before{
+    width: 20px;
+    height: 20px;
+    background: url(../images/libro.png) center/contain no-repeat;
+  }
+  li.java::before{
+   
+    background: url(../images/java.png) center/contain no-repeat;
+  }
+  li.spring::before{
+    background: url(../images/spring.png) center/contain no-repeat; 
+  }
+  li.php::before{
+    background: url(../images/php.png) center/contain no-repeat; 
+  }
+  li.sql::before{
+    background: url(../images/sql.png) center/contain no-repeat; 
+  }
+  li.py::before{
+    background: url(../images/python.png) center/contain no-repeat; 
+  }
+  li.git::before{
+    background: url(../images/git.png) center/contain no-repeat; 
+  }
+  li.docker::before{
+    background: url(../images/docker.png) center/contain no-repeat; 
+  }
+  li.trello::before{
+    background: url(../images/trello.png) center/contain no-repeat; 
+  }
+  li.code::before{
+    background: url(../images/code.png) center/contain no-repeat; 
+  }
+  li.netbeans::before{
+    background: url(../images/netbeans.png) center/contain no-repeat; 
+  }
+  li.postman::before{
+    background: url(../images/postman.png) center/contain no-repeat; 
+  }
+  li.IntelliJ::before{
+    background: url(../images/idea.svg) center/contain no-repeat; 
+  }
+  li.eclipse::before{
+    background: url(../images/eclipse.png) center/contain no-repeat; 
+  }
+  li.html::before{
+    background: url(../images/html.png) center/contain no-repeat; 
+  }
+  li.css::before{
+    background: url(../images/css.png) center/contain no-repeat; 
+  }
+  li.bootstrap::before{
+    background: url(../images/bootstrap.png) center/contain no-repeat; 
+  }
+  li.javascript::before{
+    background: url(../images/javascript.png) center/contain no-repeat; 
+  }
+  li.angular::before{
+    background: url(../images/angular.png) center/contain no-repeat; 
+  }
+  li.flutter::before{
+    background: url(../images/flutter.png) center/contain no-repeat; 
+  }
+
+  
+
+
+  
+  
+
+  li:hover::before {
+    transform: translateY(-50%) rotate(360deg); /* Rota la imagen al pasar el ratón por encima */
+  }
+
+  
+
+  
+  #puntoNegro{
+    color: #212529;  
+    
+}
+#puntoNegro::before{
+  background: none;  
+} 
+
+li #puntoNegro{
+  list-style: none;
+}
+
+.elementosResponsive{
+    display: none;
+}
+
+a{
+  border-radius: 10%;
+}
+#cabecera > div > nav > div > button{
+  display: none;
+}
+a:hover{
+      background-color: #2196F3 !important;
+      color: #ffc107 !important;
+}
+
+
+header{
+  position: static;
+  top: 3 px;
+  z-index: 3;
+  width: 100%;
+  margin: -2%;
+  padding: 0em 1em 0em 1em ;
+}
+
+#cabecera{
+  padding-top: 2em;
+  padding-left: 1em ;
+  
+}
+strong {
+  color: #ffc107;
+}
+
+ h2{
+  color: #ff2c07 !important
+}
+
+
+.language-image {
+  width: 100%; /* Ajusta el ancho y alto según el tamaño de tus imágenes */
+  
+  background-image: none;
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out; /* Transición suave */
+}
+.language:hover + .col .language-image,
+.language-image::before {
+  background-image: var(--language-image);
+}
+
+.language {
+  cursor: pointer;
+}
+.colimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Ajusta la altura según el tamaño de tus imágenes */
+}
+
+
+
+.animated-link:hover {
+  /* Define la animación */
+  animation-name: swing; /* Nombre de la animación */
+  animation-duration: 1s; /* Duración de la animación */
+  animation-iteration-count: infinite; /* Repetir infinitamente */
+  transform-origin: center; /* Define el punto de origen de la animación */
+  display: inline-block; /* Para que el enlace se comporte como un bloque */
+}
+
+/* Define la animación */
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg); /* Gira el elemento */
+  }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg); /* Gira el elemento en dirección opuesta */
+  }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg); /* Vuelve a girar en la dirección inicial */
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg); /* Gira nuevamente en dirección opuesta */
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 0deg); /* Regresa al ángulo original */
+  }
+}
+
+.principal{
+  color:#ffc107
+}
+.job{
+  color: #2196F3;
+}
+.personal{
+  color: #4CAF50;
+}
+.lesimportant{
+  color:#FF9800
+}
+#cabecera > div > nav > div > button > span{
+  display: none;
+}
+
+
+@media screen and (max-width:600px){
+  header{
+      position: static;
+   }
+   #cabecera > div > nav > div > button{
+    display: block;
+  }
+  .elementosNoResponsive{
+      display: none;
+  }
+  .elementosResponsive{
+      display: block;
+  }
+
+  .dropdown-menu{
+  left: 0% !important;
+}
+  
+input[type="search"]{
+  width: 42%;
+  margin-left: 28%;
+}
+#cabecera li::before{
+  background: none;
+}
+a {
+  list-style: none;
+  position: relative;
+  padding-left: 20px; /* Asegúrate de dejar espacio para la viñeta */
+}
+
+#cabecera > div > nav > div > button > span{
+  display: block;
+  left: 2%;
+}
+
+
+
+
+a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Tamaño de la viñeta */
+  height: 20px; /* Tamaño de la viñeta */
+  background: url(../images/star.png) center/contain no-repeat; /* Imagen de la viñeta */
+  transition: transform 0.5s ease;
+}
+
+a:hover::before {
+  transform: translateY(-50%) rotate(360deg); /* Rota la imagen al pasar el ratón por encima */
+}
+
+
+#cv > a::before{
+  background: none;
+}
+#training a::before{
+  background: none;
+}
+
+}
