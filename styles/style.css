@@ -154,21 +154,7 @@ strong {
 }
 
 
-.language-image {
-  width: 100%; /* Ajusta el ancho y alto según el tamaño de tus imágenes */
-  
-  background-image: none;
-  background-size: cover;
-  transition: background-image 0.3s ease-in-out; /* Transición suave */
-}
-.language:hover + .col .language-image,
-.language-image::before {
-  background-image: var(--language-image);
-}
 
-.language {
-  cursor: pointer;
-}
 .colimage {
   display: flex;
   justify-content: center;
