@@ -8,6 +8,8 @@ body {
     position: relative;
     padding-left: 20px; /* Asegúrate de dejar espacio para la viñeta */
   }
+
+  
   
 
   li::before {
