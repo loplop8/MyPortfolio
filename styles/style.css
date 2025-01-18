@@ -1,277 +1,455 @@
+/***** BODY *****/
 body {
-    font-family: Arial, sans-serif;
-  
-  }
-
-  li {
-    list-style: none;
-    position: relative;
-    padding-left: 20px; /* Asegúrate de dejar espacio para la viñeta */
-  }
-
-  
-  
-
-  li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 35px; /* Tamaño de la viñeta */
-    height: 25px; /* Tamaño de la viñeta */
-    transition: transform 0.5s ease;
-  }
-
-  li.star::before{
-    width: 20px;
-    height: 20px;
-    background: url(../images/star.png) center/contain no-repeat;
-  }
-  li.book::before{
-    width: 20px;
-    height: 20px;
-    background: url(../images/libro.png) center/contain no-repeat;
-  }
-  li.java::before{
-   
-    background: url(../images/java.png) center/contain no-repeat;
-  }
-  li.spring::before{
-    background: url(../images/spring.png) center/contain no-repeat; 
-  }
-  li.php::before{
-    background: url(../images/php.png) center/contain no-repeat; 
-  }
-  li.sql::before{
-    background: url(../images/sql.png) center/contain no-repeat; 
-  }
-  li.py::before{
-    background: url(../images/python.png) center/contain no-repeat; 
-  }
-  li.git::before{
-    background: url(../images/git.png) center/contain no-repeat; 
-  }
-  li.docker::before{
-    background: url(../images/docker.png) center/contain no-repeat; 
-  }
-  li.trello::before{
-    background: url(../images/trello.png) center/contain no-repeat; 
-  }
-  li.code::before{
-    background: url(../images/code.png) center/contain no-repeat; 
-  }
-  li.netbeans::before{
-    background: url(../images/netbeans.png) center/contain no-repeat; 
-  }
-  li.postman::before{
-    background: url(../images/postman.png) center/contain no-repeat; 
-  }
-  li.IntelliJ::before{
-    background: url(../images/idea.svg) center/contain no-repeat; 
-  }
-  li.eclipse::before{
-    background: url(../images/eclipse.png) center/contain no-repeat; 
-  }
-  li.html::before{
-    background: url(../images/html.png) center/contain no-repeat; 
-  }
-  li.css::before{
-    background: url(../images/css.png) center/contain no-repeat; 
-  }
-  li.bootstrap::before{
-    background: url(../images/bootstrap.png) center/contain no-repeat; 
-  }
-  li.javascript::before{
-    background: url(../images/javascript.png) center/contain no-repeat; 
-  }
-  li.angular::before{
-    background: url(../images/angular.png) center/contain no-repeat; 
-  }
-  li.flutter::before{
-    background: url(../images/flutter.png) center/contain no-repeat; 
-  }
-
-  
-
-
-  
-  
-
-  li:hover::before {
-    transform: translateY(-50%) rotate(360deg); /* Rota la imagen al pasar el ratón por encima */
-  }
-
-  
-
-  
-  #puntoNegro{
-    color: #212529;  
-    
-}
-#puntoNegro::before{
-  background: none;  
-} 
-
-li #puntoNegro{
-  list-style: none;
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #fff;
+  background-color: #000; /* Fondo negro */
+  overflow-x: hidden;
+  position: relative; /* Para scrollspy */
 }
 
-.elementosResponsive{
-    display: none;
+/***** NAVBAR *****/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.navbar-nav .nav-link.active {
+  color: #16a085 !important;
+  font-weight: bold;
+  border-bottom: 2px solid #16a085;
+}
+.navbar-brand {
+  color: #1abc9c !important;
+  font-size: 1.5rem;
 }
 
-a{
-  border-radius: 10%;
-}
-#cabecera > div > nav > div > button{
-  display: none;
-}
-a:hover{
-      background-color: #2196F3 !important;
-      color: #ffc107 !important;
-}
-
-
-header{
-  position: static;
-  top: 3 px;
-  z-index: 3;
-  width: 100%;
-  margin: -2%;
-  padding: 0em 1em 0em 1em ;
-}
-
-#cabecera{
-  padding-top: 2em;
-  padding-left: 1em ;
-  
-}
-strong {
-  color: #ffc107;
-}
-
- h2{
-  color: #ff2c07 !important
-}
-
-
-
-.colimage {
+/***** HERO (imagen de fondo) *****/
+.hero {
+  background: url("../images/d9c08b7b-0aa8-4a6f-ad06-636c4a6618e8.webp") center center / cover no-repeat fixed;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 200px; /* Ajusta la altura según el tamaño de tus imágenes */
-}
-
-
-
-.animated-link:hover {
-  /* Define la animación */
-  animation-name: swing; /* Nombre de la animación */
-  animation-duration: 1s; /* Duración de la animación */
-  animation-iteration-count: infinite; /* Repetir infinitamente */
-  transform-origin: center; /* Define el punto de origen de la animación */
-  display: inline-block; /* Para que el enlace se comporte como un bloque */
-}
-
-/* Define la animación */
-@keyframes swing {
-  20% {
-    transform: rotate3d(0, 0, 1, 15deg); /* Gira el elemento */
-  }
-  40% {
-    transform: rotate3d(0, 0, 1, -10deg); /* Gira el elemento en dirección opuesta */
-  }
-  60% {
-    transform: rotate3d(0, 0, 1, 5deg); /* Vuelve a girar en la dirección inicial */
-  }
-  80% {
-    transform: rotate3d(0, 0, 1, -5deg); /* Gira nuevamente en dirección opuesta */
-  }
-  100% {
-    transform: rotate3d(0, 0, 1, 0deg); /* Regresa al ángulo original */
-  }
-}
-
-.principal{
-  color:#ffc107
-}
-.job{
-  color: #2196F3;
-}
-.personal{
-  color: #4CAF50;
-}
-.lesimportant{
-  color:#FF9800
-}
-#cabecera > div > nav > div > button > span{
-  display: none;
-}
-
-
-@media screen and (max-width:600px){
-  header{
-      position: static;
-   }
-   #cabecera > div > nav > div > button{
-    display: block;
-  }
-  .elementosNoResponsive{
-      display: none;
-  }
-  .elementosResponsive{
-      display: block;
-  }
-
-  .dropdown-menu{
-  left: 0% !important;
-}
-  
-input[type="search"]{
-  width: 42%;
-  margin-left: 28%;
-}
-#cabecera li::before{
-  background: none;
-}
-a {
-  list-style: none;
+  text-align: center;
   position: relative;
-  padding-left: 20px; /* Asegúrate de dejar espacio para la viñeta */
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); 
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+.hero img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #1abc9c;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.hero h2 {
+  font-size: 1.75rem;
+  margin-top: 1rem;
+  color: #1abc9c;
+}
+.hero .social-icons {
+  margin-top: 1.5rem;
+}
+.hero .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.hero .social-icons a:hover {
+  color: #1abc9c;
+}
+@media (min-width: 992px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
 }
 
-#cabecera > div > nav > div > button > span{
-  display: block;
-  left: 2%;
+/***** SECCIONES (FONDO SEMITRANSPARENTE) *****/
+section.section {
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+section.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+section.section h2 {
+  font-size: 2rem;
+  color: #1abc9c;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+section.section p,
+section.section li,
+section.section ul {
+  color: #eee;
 }
 
+/***** TIMELINE DE EXPERIENCIA *****/
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #1abc9c;
+  opacity: 0.7;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 60px;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0.5rem;
+  width: 15px;
+  height: 15px;
+  background: #1abc9c;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.timeline-item strong {
+  color: #1abc9c;
+}
 
+/***** CARDS DE PROYECTOS *****/
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #1abc9c;
+}
+.card-header,
+.card-footer {
+  background: transparent;
+  border: none;
+}
+.card-title {
+  color: #1abc9c;
+  font-weight: bold;
+}
+.card-text {
+  color: #fff;
+}
+.btn-custom {
+  background-color: #1abc9c;
+  border: none;
+  color: #fff;
+}
+.btn-custom:hover {
+  background-color: #16a085;
+}
 
+/***** SECCIÓN SKILLS (3 columnas) *****/
+#skills {
+  margin: 4rem auto;
+  max-width: 1200px;
+}
+#skills .col h3 {
+  color: #1abc9c;
+  margin-bottom: 1rem;
+}
+#skills ul.principal {
+  list-style: none;
+  padding: 0;
+}
+#skills ul.principal li {
+  color: #fff;
+  margin: 0.4rem 0;
+  position: relative;
+  padding-left: 20px; /* deja espacio para la viñeta */
+  /* Se quita la transición del li */
+}
 
-a::before {
-  content: '';
+/* Aplica la viñeta con imagen a cada skill (AJUSTA la ruta si es distinto) */
+li.java::before{
+  content: "";
+  background: url("../images/java.png") center/contain no-repeat;
   position: absolute;
   left: 0;
   top: 50%;
+  width: 25px;
+  height: 25px;
   transform: translateY(-50%);
-  width: 20px; /* Tamaño de la viñeta */
-  height: 20px; /* Tamaño de la viñeta */
-  background: url(../images/star.png) center/contain no-repeat; /* Imagen de la viñeta */
+  transition: transform 0.5s ease; /* transición en ::before */
+}
+li.spring::before{
+  content: "";
+  background: url("../images/spring.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.php::before{
+  content: "";
+  background: url("../images/php.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.sql::before{
+  content: "";
+  background: url("../images/sql.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.py::before{
+  content: "";
+  background: url("../images/python.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.git::before{
+  content: "";
+  background: url("../images/git.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.docker::before{
+  content: "";
+  background: url("../images/docker.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.trello::before{
+  content: "";
+  background: url("../images/trello.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.code::before{
+  content: "";
+  background: url("../images/code.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.netbeans::before{
+  content: "";
+  background: url("../images/netbeans.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.postman::before{
+  content: "";
+  background: url("../images/postman.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.IntelliJ::before{
+  content: "";
+  background: url("../images/idea.svg") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.eclipse::before{
+  content: "";
+  background: url("../images/eclipse.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.html::before{
+  content: "";
+  background: url("../images/html.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.css::before{
+  content: "";
+  background: url("../images/css.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.bootstrap::before{
+  content: "";
+  background: url("../images/bootstrap.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.javascript::before{
+  content: "";
+  background: url("../images/javascript.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.angular::before{
+  content: "";
+  background: url("../images/angular.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+li.flutter::before{
+  content: "";
+  background: url("../images/flutter.png") center/contain no-repeat; 
+  position: absolute; 
+  left: 0; top: 50%; 
+  width: 25px; 
+  height: 25px; 
+  transform: translateY(-50%);
   transition: transform 0.5s ease;
 }
 
-a:hover::before {
-  transform: translateY(-50%) rotate(360deg); /* Rota la imagen al pasar el ratón por encima */
+/* Rota la viñeta con hover */
+#skills ul.principal li:hover::before {
+  transform: translateY(-50%) rotate(360deg);
 }
 
-
-#cv > a::before{
-  background: none;
+/***** ENLACES DE DESCARGA ANIMADOS (SWING) *****/
+.animated-link:hover {
+  animation-name: swing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  display: inline-block;
+  background-color: #16a085;
 }
-#training a::before{
-  background: none;
+@keyframes swing {
+  20%  { transform: rotate3d(0, 0, 1, 15deg); }
+  40%  { transform: rotate3d(0, 0, 1, -10deg); }
+  60%  { transform: rotate3d(0, 0, 1, 5deg); }
+  80%  { transform: rotate3d(0, 0, 1, -5deg); }
+  100% { transform: rotate3d(0, 0, 1, 0deg); }
 }
 
+/***** FORMULARIO DE CONTACTO *****/
+.contacto-form label {
+  color: #eee;
+}
+.contacto-form .form-control {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 1px solid #1abc9c;
+}
+
+/***** BOTÓN "VOLVER ARRIBA" *****/
+#btnBackToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: none; 
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+}
+#btnBackToTop:hover {
+  background-color: #16a085;
+}
+
+/***** FOOTER *****/
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #111;
+  color: #ccc;
+}
+footer a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #16a085;
 }

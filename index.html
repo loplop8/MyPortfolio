@@ -1,267 +1,601 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es" data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My portfolio - José Antonio López López</title>
-  <link rel="icon" href="images/libro.png" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Profesional - José Antonio López</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+
+  <!-- Tu hoja de estilos principal (AJUSTA la ruta si es distinta) -->
   <link rel="stylesheet" href="./styles/style.css">
 </head>
-
-<body class="bg-dark text-light">
-  <header class=" text-white d-flex flex-wrap align-items-center justify-content-center  w-100">
-    <div>
-
-      <div id="cabecera">
-
-
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-
-          <li class="star"><a href="#about" class="nav-link px-2 text-white mt-2 elementosNoResponsive">About Me</a></li>
-          <li class="star"><a href="#experience" class="nav-link px-2 text-white mt-2 elementosNoResponsive">Experience</a></li>
-          <li class="star"><a href="#training" class="nav-link px-2 text-white mt-2 elementosNoResponsive">Certificates</a></li>
-          <li class="star"><a href="#skills" class="nav-link px-2 text-white mt-2 elementosNoResponsive">Skills</a></li>
-          <li class="star"><a href="#cv" class="nav-link px-2 text-white mt-2 elementosNoResponsive">My CV</a></li>
-          <li class="star"><a href="https://www.linkedin.com/in/joseantoniolopez2/"
-              class="btn btn-outline-light btn-floating m-1 elementosNoResponsive" role="button"><svg
-                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
-                viewBox="0 0 16 16">
-                <path
-                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
-              </svg></i></a></li>
-          <li class="star"><a href="https://wa.me/+34607450598" class="btn btn-outline-light btn-floating m-1 elementosNoResponsive"
-              role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-whatsapp" viewBox="0 0 16 16">
-                <path
-                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-              </svg>
-            </a></li>
-          <li class="star"><a href="https://github.com/loplop8" class="btn btn-outline-light btn-floating m-1 elementosNoResponsive"
-              role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-github" viewBox="0 0 16 16">
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-              </svg></a></li>
-
+<body>
+  <!-- Navbar con ScrollSpy -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">< /Developer ></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#educacion">Educación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Tecnologías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificaciones">Certificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
         </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Hero con imagen de fondo + Redes Sociales -->
+  <header class="hero d-flex">
+    <div class="hero-content">
+      <!-- Ajusta la ruta a tu imagen de perfil -->
+      <img src="images/1719675331673.jpeg" alt="Foto de perfil" />
+      <h1>José Antonio López López</h1>
+      <h2>Full Stack Developer</h2>
 
-
-        <div class="text-end me-5">
-
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid" >
-
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <li class="nav-item dropdown " id="puntoNegro">
-                  <a href="#about" class="nav-link px-2 text-white mt-2 elementosResponsive">About Me</a>
-                  <a href="#experience" class="nav-link px-2 text-white mt-2 elementosResponsive">Experience</a>
-                  <a href="#training" class="nav-link px-2 text-white mt-2 elementosResponsive">Certificates</a>
-                  <a href="#skills" class="nav-link px-2 text-white mt-2 elementosResponsive">Skills</a>
-                  <a href="#cv" class="nav-link px-2 text-white mt-2 elementosResponsive">My CV</a>
-                  <a href="https://www.linkedin.com/in/joseantoniolopez2/"
-                    class="btn btn-outline-light btn-floating m-1 elementosResponsive" role="button"><svg
-                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-linkedin" viewBox="0 0 16 16">
-                      <path
-                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
-                    </svg></i></a>
-                  <a href="https://wa.me/+34607450598"
-                    class="btn btn-outline-light btn-floating m-1 elementosResponsive" role="button"><svg
-                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-whatsapp" viewBox="0 0 16 16">
-                      <path
-                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                    </svg>
-                  </a>
-                  <a href="https://github.com/loplop8"
-                    class="btn btn-outline-light btn-floating m-1 elementosResponsive" role="button"><svg
-                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
-                      viewBox="0 0 16 16">
-                      <path
-                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                    </svg></a>
-
-
-
-
-
-
-
-              </div>
-            </div>
-        </div>
+      <!-- Redes sociales en el Hero -->
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/joseantoniolopez2/" target="_blank">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/loplop8" target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://wa.me/+34607450598" target="_blank">
+          <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+      </div>
+    </div>
   </header>
 
-  <main class="container my-4">
-    <section class="text-center " id="about">
-      <h2 class="mt-5">About Me</h2>
-      <p> <span class="personal">Passionate Web Application Development Technician</span> eager to forge a dynamic career aligned with my comprehensive
-        studies and expertise. My unwavering <span class="personal">enthusiasm for computing and programming</span> fuels my <span class="personal">continuous exploration</span> of
-        cutting-edge technologies. I am dedicated to leveraging my skills to drive innovation and <span class="personal">create impactful
-          solutions</span> in the ever-evolving tech landscape.</br> I am currently <span class="personal">developing a personal project</span> with <strong>Spring Boot</strong> on the backend, <strong>Angular</strong> for <span class="lesimportant">web</span> and <strong>Flutter</strong> for <span class="lesimportant">Android and IOS devices</span>  </p>
-    </section>
+  <!-- Sección: Sobre Mí -->
+  <section id="sobre-mi" class="section" tabindex="0">
+    <h2>Sobre Mí</h2>
+    <p>
+      ¡Hola! Soy José Antonio López López, un apasionado Full Stack Developer con experiencia en 
+      <strong>JavaScript, Java, Python, PHP, Angular, Spring, Flutter, SQL y NodeJS</strong>.
+    </p>
+    <p>
+      He tenido la oportunidad de participar en proyectos de <strong>microservicios</strong>, 
+      <strong>Dockerización</strong>, integración de <strong>bots</strong> de WhatsApp/Telegram y 
+      <strong>mejoras de seguridad (2FA)</strong>, abarcando tanto el <strong>frontend</strong> (Angular) 
+      como el <strong>backend</strong> (Node.js con NestJS/Express, o Java con Spring Boot). 
+      Además, cuento con experiencia impartiendo clases de desarrollo de software, 
+      reforzando mis habilidades de comunicación.
+    </p>
+    <p>
+      Mi objetivo es continuar aprendiendo y colaborando en proyectos innovadores que requieran 
+      un enfoque creativo y una mentalidad de mejora continua. ¡Te invito a conocer mis proyectos, 
+      certificaciones y trayectoria, o a contactarme directamente para explorar sinergias!
+    </p>
+  </section>
 
-    <section class="text-center" id="experience">
-      <h2 id="experience">Experience</h2>
-      <dl>
+  <!-- Sección: Experiencia (Timeline) -->
+  <section id="experiencia" class="section" tabindex="0">
+    <h2>Experiencia</h2>
+    <div class="timeline">
 
-        <dt class="job">
-          Freelance Web Application Developer | Pizzeria Martino February 2024 to Present</dt>
-          <dd>
-            As a freelance web application developer, I've had the privilege of collaborating with <span class="lesimportant">Pizzeria Martino</span> on an ongoing project aimed at developing a comprehensive web application to streamline operations and enhance the customer experience.
+      <!-- Software Developer en Ayesa -->
+      <div class="timeline-item">
+        <h5>
+          <strong>Software Developer</strong> en <em>Ayesa</em><br/>
+          <small>(ago. 2024 - Actualidad | 6 meses)</small>
+        </h5>
+        <p>
+          Modalidad híbrida. Desarrollo de microservicios y API’s con Node.js (NestJS, Express), 
+          Docker Compose y mantenimiento de servicios en frontend (Angular).
+        </p>
+        <ul>
+          <li>Plan de contingencias para Endesa (backend y frontend).</li>
+          <li>Backend para cita previa de la C.A. de Murcia, integrando bots WhatsApp y Telegram.</li>
+          <li>Mejoras de seguridad con doble factor de autenticación (2FA) en Endesa.</li>
+          <li>Mejoras en proyecto Tcall (backend y frontend)</li>
+        </ul>
+      </div>
 
-During this project:
-I designed and developed the <strong> using Java, in conjunction with a SQL database</strong> created and structured from scratch. I implemented <strong>specific procedures to optimize business logic</strong> and ensure efficient performance.
-I actively contributed to the frontend using <strong>JavaScript to deliver a dynamic and responsive user experience.</strong>
-I customized the <strong> appearance of the application using Bootstrap and CSS</strong>, ensuring an attractive and user-friendly interface that reflects <span class="lesimportant">Pizzeria Martino's</span> identity.
-I maintained <strong>open communication with the client</strong>, continuously gathering requirements and adapting the project to meet their specific needs and expectations.
-My contribution has been instrumental to the project's ongoing success. The resulting application not only meets but exceeds the client's expectations, significantly improving operational efficiency and enhancing the customer experience at <span class="lesimportant">Pizzeria Martino.</span>
+      <!-- Full Stack Developer (Freelance) -->
+      <div class="timeline-item">
+        <h5>
+          <strong>Full Stack Developer (Freelance)</strong><br/>
+          <small>(ene. 2024 - jul. 2024 | 7 meses)</small>
+        </h5>
+        <p>
+          Desarrollo del sitio web 
+          <a href="https://www.pizzeriamartino.es" target="_blank" class="text-info">
+            Pizzería Martino
+          </a>, incluyendo requisitos, diseño backend/BD, frontend y despliegue en producción.
+        </p>
+      </div>
 
-The project is currently in development, and the website can be accessed at <a  href="https://pizzeriamartino.es"><stron>www.pizzeriamartino.es</stron></a>
-          </dd> 
+      <!-- Instructor de software -->
+      <div class="timeline-item">
+        <h5>
+          <strong>Instructor de software</strong><br/>
+          <small>(oct. 2023 - dic. 2023 | 3 meses)</small>
+        </h5>
+        <p>
+          Clases particulares sobre desarrollo y despliegue de proyectos de fin de grado superior. 
+          Tecnologías: Java EE (JSP), JavaScript, Bootstrap 5.0.
+        </p>
+      </div>
 
+      <!-- Full Stack Developer en Astibot -->
+      <div class="timeline-item">
+        <h5>
+          <strong>Full Stack Developer</strong> en <em>Astibot Ingeniería</em><br/>
+          <small>(sept. 2023 - nov. 2023 | 3 meses)</small>
+        </h5>
+        <p>
+          Desarrollo de aplicaciones web completas (backend y frontend),
+          con diseño y construcción de base de datos.
+        </p>
+      </div>
 
-        
+      <!-- Programador informático en Bluumi -->
+      <div class="timeline-item">
+        <h5>
+          <strong>Programador informático</strong> en <em>Bluumi Mobile Apps</em><br/>
+          <small>(mar. 2023 - jun. 2023 | 4 meses)</small>
+        </h5>
+        <p>
+          Proyecto híbrido en Sevilla. Trabajos centrados en PHP, expresiones regulares, 
+          y otras tecnologías web.
+        </p>
+      </div>
 
-        <dt class="job">
-          Full Stack Developer  in Astibot Ingeniería September 2023 to November 2023</dt>
-        <dd >In this job I was been develop a <span class="lesimportant">web app for Getafe's City</span>  with <strong>Angular </strong>in the Front ,
-          <strong>PHP </strong>in the back, and with an <strong>SQL database</strong> using <strong>MySQL</strong> .
-        <dt class="job">Frontend</dt>
-        <dd>I worked with the layout of the website with the <strong>Bootstrap framework</strong>, the <span class="lesimportant">validation of
-          form data</span>, <span class="lesimportant">data extraction</span> through the <span class="lesimportant">API</span> for <span class="lesimportant">data visualization</span>, creation of <span class="lesimportant">data graphs</span> and <span class="lesimportant">navigation</span>
-          according to <span class="lesimportant">user roles</span>.</dd>
-        <dt class="job">Backend</dt>
-        <dd>
-          I worked with the <span class="lesimportant"> integration of data from external API to our database</span> <strong>(ETL)</strong>, creation of
-          <span class="lesimportant">methods and API endpoints</span>, for the different functionalities of the website, connection with <strong>SQL</strong> database.
-        </dd>
-        <dt class="job">
-          Database
-        </dt>
-        <dd>
-          Creation of <span class="lesimportant">database model</span>. Connection with <strong>API</strong> developed in <strong>PHP</strong>. Creation of <span class="lesimportant">events and triggers for website
-            functionalities</span>. <span class="lesimportant">Data queries</span> to perform development tests.
-        </dd>
-        </dd>
+    </div>
+  </section>
 
-        <dt class="job">Practice Developer
-          Mill Aplications Company, S.A (Bluumi) from March 2023 to June 2023
-        </dt>
-        <dd>In this company I was training in <span class="lesimportant">hybrid technologies</span> <strong>(Flutter)</strong>, we formed a <span class="lesimportant">development team</span> to create a
-          Web application with <strong>Angular</strong> using <strong>Angular Material</strong> and <strong>Spring Boot</strong>, we also did some testing to <span class="lesimportant">test a web
-            and Mobile application</span>. We work all the time with <strong>Trello</strong>, a tool to promote <strong>Agyle methodologies</strong>.</dd>
-      </dl>
-    </section>
+  <!-- Sección: Educación -->
+  <section id="educacion" class="section" tabindex="0">
+    <h2>Educación</h2>
+    <div class="timeline">
+      <!-- Item 1: IES Camas -->
+      <div class="timeline-item">
+        <h5>
+          <strong>IES Camas</strong> (sept. 2021 - jul. 2023)
+        </h5>
+        <p>
+          Desarrollo de Aplicaciones Web <br/>
+          Aptitudes destacadas: Java, HTML, CSS, XML, JavaScript, PHP, Docker, entre otras.
+        </p>
+      </div>
+  
+      <!-- Item 2: Centro ITIS -->
+      <div class="timeline-item">
+        <h5>
+          <strong>Centro ITIS</strong> (2018)
+        </h5>
+        <p>
+          Máster en Informática <br/>
+          Especialización en Programación Java y diseño gráfico con Photoshop. <br/>
+          Aptitudes destacadas: PHP, CSS, Java, etc.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section class="text-center" id="training">
-      <h2>Certificates</h2>
-      <ul class="job">
-        <li class="book">
-          Advanced Training Cycle in Web Application Development (DAW)
-          IES Camas 2023
-        </li>
-        <li class="book">Level B1 of English Certified by the University of Cambridge  <a href="./documents/CertificadoB1.PDF"
-          class="animated-link btn btn-outline-light btn-floating m-1 " role="button">Download here this certificate!<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-    <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
-    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-  </svg>
-  </a>  </li>
-        <li class="book">Spring Boot from Zero to Expert 2023 Udemy Course 
-          <a href="./documents/spring.pdf"
-              class="animated-link btn btn-outline-light btn-floating m-1 " role="button">Download here this certificate!<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-        <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
-        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-      </svg>
-      </a>  
-        </li>
-        <li class="book"> Legacy-Flutter:Your complete guide for IOS and Android 2023 Udemy course  <a href="./documents/flutter.pdf"
-          class="animated-link btn btn-outline-light btn-floating m-1 " role="button">Download here this certificate!<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-    <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
-    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-  </svg>
-  </a>  </li>
-        <li class="book">Python,complete guide 2021 Udemy course <a href="./documents/python.pdf"
-          class="animated-link btn btn-outline-light btn-floating m-1 " role="button">Download here this certificate!<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-    <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
-    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-  </svg>
-  </a> </li>
+  <!-- Sección: Tecnologías y Herramientas (3 columnas) -->
+  <section class="row text-center section"  tabindex="0" id="skills">
+    <h2>Tecnologias y Herramientas:</h2>
+    <div class="col">
+      <h3>Backend Skills:</h2>
+      <ul class="principal">
+        <li class="java">JAVA</li>
+        <li class="spring">Spring Framework</li>
+        <li class="php">PHP</li>
+        <li class="sql">SQL Database</li>
+        <li class="py">Python</li>
       </ul>
+    </div>
+    <div class="col">
+      <h3>Development Tools:</h2>
+      <ul class="principal">
+        <li class="git">Git</li>
+        <li class="docker">Docker</li>
+        <li class="trello">Trello</li>
+        <li class="code">Visual Studio Code</li>
+        <li class="netbeans">NetBeans</li>
+        <li class="postman">Postman</li>
+        <li class="IntelliJ">IntelliJ</li>
+        <li class="eclipse">Eclipse</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Frontend Skills:</h2>
+      <ul class="principal">
+        <li class="html">HTML</li>
+        <li class="css">CSS</li>
+        <li class="bootstrap">Bootstrap(HTML + CSS)</li>
+        <li class="javascript">JavaScript</li>
+        <li class="angular">Angular (TypeScript)</li>
+        <li class="flutter">Flutter(Dart)</li>
+      </ul>
+    </div>
+  </section>
 
-
-    </section>
-
-
-
-    <section class="row text-center " id="skills">
-
-
-      <div class="col ">
-        <h2> Backend Skills:</h2>
-        <ul class="principal">
-          <li class="java"  >JAVA</li>
-          <li class="spring">Spring Framework</li>
-          <li class="php">PHP</li>
-          <li class="sql">SQL Database</li>
-          <li class="py">Python</li>
-          
-        </ul>
+  <!-- Sección: Certificaciones -->
+  <<section id="certificaciones" class="section" tabindex="0">
+    <h2>Certificaciones</h2>
+    <div class="timeline">
+  
+      <!-- IT Specialist - Cybersecurity -->
+      <div class="timeline-item">
+        <h5>
+          <strong>IT Specialist - Cybersecurity</strong>
+        </h5>
+        <p>
+          <em>Certiport - Pearson VUE Business | sept. 2024</em><br/>
+          Aptitudes: Ciberseguridad <br/>
+          <a href="https://www.credly.com/badges/9cd44f11-52e3-47f3-adb7-39f55c2f8707/linked_in_profile" 
+             class="btn btn-outline-light btn-floating m-1 animated-link"
+             role="button">
+            Visualizar Certificado
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+              <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2"/>
+            </svg>
+          </a>
+        </p>
       </div>
-      <div class="col ">
-        <h2> Development tools:</h2>
-        <ul class="principal">
-          <li class="git">Git</li>
-          <li class="docker">Docker</li>
-          <li class="trello">Trello</li>
-          <li class="code">Visual Studio Code</li>
-          <li class="netbeans">NetBeans</li>
-          <li class="postman">Postman</li>
-          <li class="IntelliJ">IntelliJ</li>
-          <li class="eclipse">Eclipse</li>
-        </ul>
+  
+      <!-- Ciberseguridad avanzada -->
+      <div class="timeline-item mt-3">
+        <h5>
+          <strong>Ciberseguridad avanzada en entornos de la tecnología de la operación</strong>
+        </h5>
+        <p>
+          <em>MainJobs | ago. 2024</em><br/>
+          ID: F230001MC<br/>
+          Aptitudes: Ciberseguridad en tecnologías de la información<br/>
+          <a href="./documents/Diploma de Ciberseguridad en la Industria.pdf" 
+             class="btn btn-outline-light btn-floating m-1 animated-link"
+             role="button">
+            Descargar certificado
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+              <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2"/>
+            </svg>
+          </a>
+        </p>
       </div>
-      <div class="col ">
-        <h2> Frontend Skills:</h2>
-        <ul class="principal">
-          <li class="html">HTML</li>
-          <li class="css">CSS</li>
-          <li class="bootstrap">Bootstrap(HTML + CSS)</li>
-          <li class="javascript">JavaScript</li>
-          <li class="angular">Angular (TypeScript)</li>
-          <li class="flutter">Flutter(Dart)</li>
-        </ul>
+  
+      <!-- Curso Spring Boot -->
+      <div class="timeline-item mt-3">
+        <h5>
+          <strong>Curso Spring Boot</strong>
+        </h5>
+        <p>
+          <em>Udemy | oct. 2023</em><br/>
+          ID de la credencial: UC-07225a4f-ec2f-40c0-9b50-9dfb9a476368<br/>
+          Aptitudes: Hibernate, SQL, Thymeleaf, Java, Maven, Spring Boot<br/>
+          <a href="./documents/spring.pdf" 
+             class="btn btn-outline-light btn-floating m-1 animated-link"
+             role="button">
+            Descargar Certificado
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+              <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2"/>
+            </svg>
+          </a>
+        </p>
       </div>
-    </section>
-    <section id="cv" class="text-center">
-      <h2>My Curriculum Vitae</h2>
-      
-      <a href="./documents/curriculumJA.pdf"
-              class="animated-link btn btn-outline-light btn-floating m-1 " role="button">Download here my CV!<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-        <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
-        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-      </svg>
-      </a>
-    </section>
+  
+      <!-- Preliminary English Test (B1) -->
+      <div class="timeline-item mt-3">
+        <h5>
+          <strong>Preliminary English Test (B1)</strong>
+        </h5>
+        <p>
+          <em>Cambridge University Press & Assessment English | jul. 2023</em><br/>
+          ID: C3589064<br/>
+          Aptitudes: Inglés<br/>
+          <a href="./documents/CertificadoB1.PDF" 
+             class="btn btn-outline-light btn-floating m-1 animated-link"
+             role="button">
+            Descargar Certificado
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+              <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+  
+      <!-- Curso Flutter -->
+      <div class="timeline-item mt-3">
+        <h5>
+          <strong>Curso Flutter (Cursado en prácticas de Bluumi)</strong>
+        </h5>
+        <p>
+          <em>Udemy | jun. 2023</em><br/>
+          ID de la credencial: UC-40bc139-fbf6-4e72-a7c3-b1f9f63d7fd6<br/>
+          Aptitudes: Dart, SQL, Flutter, Resolución de problemas<br/>
+          <a href="./documents/flutter.pdf" 
+             class="btn btn-outline-light btn-floating m-1 animated-link"
+             role="button">
+            Descargar Certificado
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+              <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+  
+      <!-- Curso Python -->
+      <div class="timeline-item mt-3">
+        <h5>
+          <strong>Curso Python</strong>
+        </h5>
+        <p>
+          <em>Udemy</em><br/>
+          Aptitudes: Python<br/>
+          <a href="./documents/python.pdf" 
+             class="btn btn-outline-light btn-floating m-1 animated-link"
+             role="button">
+            Descargar Certificado
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+              <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
 
+  <!-- Sección: Proyectos (Carrusel) -->
+  <section id="proyectos" class="section" tabindex="0">
+    <h2>Proyectos</h2>
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        
+        <!-- Proyecto 1 (activo) -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="card-header text-center">
+                  <h5 class="card-title">Pizzería Martino</h5>
+                </div>
+                <div class="card-body text-center">
+                  <!-- Ajusta la ruta a la imagen del proyecto -->
+                  <img
+                    src="images/Captura desde 2025-01-18 17-19-42.png"
+                    alt="Pizzería Martino"
+                    class="img-fluid"
+                    style="max-height: 200px;"
+                  />
+                  <p class="card-text mt-3">
+                    Sitio web completo para un negocio de restauración.
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="https://www.pizzeriamartino.es" target="_blank" class="btn btn-custom">
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  </main>
-  <footer class="text-center py-3">
+        <!-- Proyecto 2 (ejemplo) -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="card-header text-center">
+                  <h5 class="card-title">Cita Previa Endesa</h5>
+                </div>
+                <div class="card-body text-center">
+                  <!-- Ajusta la ruta de la imagen -->
+                  <img
+                    src="images/citaPreviaEndesa.png"
+                    alt="Proyecto 2"
+                    class="img-fluid"
+                    style="max-height: 200px;"
+                  />
+                  <p class="card-text mt-3">
+                    Reservas de citas previas de Endesa
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="https://endesaxcitaprevia.ayesa.link/#/inicio" class="btn btn-custom" target="_blank">
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <p class="personal">© 2024 José Antonio López</p>
+        <!-- Proyecto 3 (ejemplo) -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="card-header text-center">
+                  <h5 class="card-title">Bots de WhatsApp y Telegram</h5>
+                </div>
+                <div class="card-body text-center">
+                  <img
+                    src="images/citaBots.png"
+                    alt="Proyecto 3"
+                    class="img-fluid"
+                    style="max-height: 200px;"
+                  />
+                  <p class="card-text mt-3">
+                    Reservas de citas en la CA de murcia a traves de vias telematicas 
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="https://www.carm.es/web/pagina?IDCONTENIDO=74185&IDTIPO=100&RASTRO=c672$m26640" class="btn btn-custom">Ver Proyecto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controles del carrusel (prev/next) -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#projectsCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#projectsCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Sección: Contacto -->
+  <section id="contacto" class="section" tabindex="0">
+    <h2>Contacta conmigo</h2>
+
+    <div class="contacto-form mt-4">
+      <form action="mailto:19joseantonio95@gmail.com" method="GET" enctype="text/plain">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            placeholder="Tu nombre"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            id="correo"
+            placeholder="nombre@ejemplo.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea
+            class="form-control"
+            id="mensaje"
+            rows="4"
+            placeholder="Escribe tu mensaje"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Botón "Volver arriba" -->
+  <button id="btnBackToTop" title="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 José Antonio López López. Todos los derechos reservados.</p>
   </footer>
 
+  <!-- Bootstrap JS (con Popper) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Otros scripts personalizados -->
+  <script>
+    // Mostrar/ocultar botón "Volver arriba" al hacer scroll
+    const btnBackToTop = document.getElementById('btnBackToTop');
+    window.onscroll = function() {
+      if (document.documentElement.scrollTop > 200) {
+        btnBackToTop.style.display = 'flex';
+      } else {
+        btnBackToTop.style.display = 'none';
+      }
+    };
+
+    // Scroll suave al hacer clic en el botón
+    btnBackToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Contraer menú en modo móvil al hacer clic en un enlace
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarNav = document.getElementById('navbarNav');
+    const bsCollapse = new bootstrap.Collapse(navbarNav, { toggle: false });
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        if (window.getComputedStyle(navbarToggler).display !== 'none') {
+          bsCollapse.hide();
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>
