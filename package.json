@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "prebuild:prod": "node dotenv-loader.js",
-    "build:prod": "ng build --configuration production --base-href /MyPortfolio/",
-    "deploy": "npm run build:prod && npx angular-cli-ghpages --dir=docs/browser --no-silent"
+    "build:prod": "npm run prebuild:prod && ng build --configuration production --base-href /MyPortfolio/",
+    "deploy": "npm run build:prod && npx angular-cli-ghpages --dir=dist --repo=https://github.com/loplop8/MyPortfolio.git --branch=angular-version --no-silent"
   },
   "private": true,
   "dependencies": {
